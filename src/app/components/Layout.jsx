@@ -1,15 +1,12 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
-import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import "../globals.css";
 import DropdownButton from "./DropdownButton";
 import { useRouter } from 'next/router';
-
-
 
 const Layout = ({ children }) => {
   const navItems = [
@@ -23,9 +20,13 @@ const Layout = ({ children }) => {
   const router = useRouter();
   const isHomePage = router.pathname === '/';
 
-
   const [isMobile, setIsMobile] = useState(false);
-
+  {
+    /**
+     * Need to add better responsiveness for mobile devices"
+     * Trying to fix the center of it
+     */
+  }
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -39,8 +40,6 @@ const Layout = ({ children }) => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-
 
   return (
     <main className="flex min-h-screen flex-col bg-blue-50">
@@ -64,19 +63,21 @@ const Layout = ({ children }) => {
       </header>
 
       <div className={`max-w-7xl mx-auto p-8 mt-6 flex ${isHomePage ? "flex-col" : "flex-col-reverse"} md:flex-row`}>
-        <div className="w-full md:w-1/3 pr-8 mb-8 md:mb-0">
-          <Image
-            className="rounded-full mb-6 border-4 border-blue-200"
-            src="/arav.jpeg"
-            alt="Arav Arora"
-            width={200}
-            height={200}
-          />
+        <div className="w-full md:w-1/3 pr-8 mb-8 md:mb-0 text-center md:text-left">
+          <div className="flex justify-center md:justify-start">
+            <Image
+              className="rounded-full mb-6 border-4 border-blue-200"
+              src="/arav.jpeg"
+              alt="Arav Arora"
+              width={200}
+              height={200}
+            />
+          </div>
           <h2 className="text-3xl font-bold text-black mb-2">ARAV ARORA</h2>
           <Link href="mailto:aravarora05@gmail.com">
             <p className="text-gray-600 mb-2 cursor-pointer">ARAVARORA05@GMAIL.COM</p>
           </Link>
-          <div className="flex space-x-4 mb-4">
+          <div className="flex justify-center md:justify-start space-x-4 mb-4">
             <Link target="_blank" href="https://github.com/AravArora05">
               <span className="hover:text-gray-800 transition duration-300">
                 <FontAwesomeIcon icon={faGithub} size="lg" style={{ color: "#333" }} />
