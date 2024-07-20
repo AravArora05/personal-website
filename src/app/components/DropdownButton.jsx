@@ -35,7 +35,7 @@ const FlyoutLink = ({ title, FlyoutContent }) => {
         className="flex justify-center items-center gap-2 cursor-pointer bg-white py-1 px-3 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-100"
         style={{ width: '120px' }}
       >
-        <span className="text-sky-900 font-semibold text-lg">
+        <span className="text-sky-900 font-semibold text-md">
           {title}
         </span>
         {isOpen ? (
@@ -58,7 +58,7 @@ const FlyoutContentComponent = ({ options }) => {
     <div className="py-2">
       {options.map(({ name, link }, index) => (
         <Link href={link} key={index}>
-          <span className="block hover:bg-gray-100 px-6 py-2 text-gray-900">
+          <span className="block text-sm hover:bg-gray-100 px-6 py-1.5 text-gray-900">
             {name}
           </span>
         </Link>

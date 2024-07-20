@@ -8,7 +8,7 @@ const ResumeInfo = () => {
 </p>
 <hr className="mb-4"></hr>
 
-            <div className="flex flex-wrap justify-between mb-4 space-x-2 sm:space-x-4 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row lg:flex-wrap justify-between mb-4 space-x-2 gap-y-2 sm:gap-y-2 text-center">
                 <a href="#education" className="text-gray-800 hover:text-blue-500">Education</a>
                 <a href="#experience" className="text-gray-800 hover:text-blue-500">Experience</a>
                 <a href="#certifications" className="text-gray-800 hover:text-blue-500">Certifications</a>
