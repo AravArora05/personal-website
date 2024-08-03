@@ -29,7 +29,7 @@ export default function AllProjects() {
       • Created custom Google Apps scripts to automate data processes, integrating with Google Sheets for real-time updates
       • Developed the frontend using HTML/CSS, and implemented Node.js backend with RESTful API endpoints`,
     date: 'April 2024 – Present',
-    demoLink: 'N/A',
+    demoLink: 'https://marvelous-maamoul-3f9e34.netlify.app/',
     githubLink: 'https://github.com/AravArora05/lys_eval',
     techStack: [
 
@@ -41,9 +41,9 @@ export default function AllProjects() {
   };
   
 
-  const projectAdmitAI = {
+  const projectAdmitWise = {
     image: 'soccer6.png',
-    title: 'AdmitAI',
+    title: 'AdmitWise',
     description: `• Assisted in designing Figma prototypes
     • Implemented a web scraper template to systematically extract class information from the top 100 US News-ranked schools
     • Utilised/integrated a Pinecone vector database with Next.js to enhance data indexing, search capabilities, and retrieval speed
@@ -72,7 +72,7 @@ export default function AllProjects() {
 
       <ProjectCard project={projectDataLYSC} />
       <ProjectCard project={projectDataTRP} />
-      <ProjectCard project={projectAdmitAI} />
+      <ProjectCard project={projectAdmitWise} />
     </>
   );
 }
