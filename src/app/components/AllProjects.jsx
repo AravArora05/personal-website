@@ -10,7 +10,7 @@ export default function AllProjects() {
         - Newspaper currently has had over 120 different viewers
         - Implemented a Go backend to manage communication between the frontend and the MongoDB article database.`,
         date: 'May 2024 - Present',
-        demoLink: 'N/A',
+        demoLink: 'https://theroleplayer.vercel.app/',
         githubLink: 'https://github.com/WillPalaia/LYSA-Eval-Framework',
         techStack: [
           { name: 'MongoDB', icon: 'logos:mongodb' },
@@ -43,13 +43,13 @@ export default function AllProjects() {
 
   const projectAdmitWise = {
     image: 'soccer6.png',
-    title: 'AdmitWise',
+    title: 'Personify',
     description: `• Assisted in designing Figma prototypes
     • Implemented a web scraper template to systematically extract class information from the top 100 US News-ranked schools
     • Utilised/integrated a Pinecone vector database with Next.js to enhance data indexing, search capabilities, and retrieval speed
     • Developed frontend using Next.js + Tailwind CSS, incorporating web-scraped information for functionality in multiple pages`,
     date: 'Jul 2024 – Present',
-    demoLink: 'N/A',
+    demoLink: 'https://www.personifyapp.ai/',
     githubLink: 'https://github.com/SamarthTewari/counsler-hosting',
     techStack: [
       { name: 'Google Sheets', icon: 'logos:google-sheets' },
