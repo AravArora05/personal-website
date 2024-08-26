@@ -2,11 +2,11 @@ const ResumeInfo = () => {
     return (
         <div className="container mx-auto">
             <h3 className="text-2xl font-bold text-center mb-4 text-black">RESUME</h3>
-<p className="text-gray-800 mb-1">This page offers an alternative format of my resume. Most of the information is similar to my PDF version. If you'd prefer to view the PDF, you can click 
-    <a href="/AravAroraResume.pdf" target="_blank" className="text-blue-500 hover:underline"> here</a>.
-   
-</p>
-<hr className="mb-4"></hr>
+            <p className="text-gray-800 mb-1">
+                This page offers an alternative format of my resume. Most of the information is similar to my PDF version. If you'd prefer to view the PDF, you can click 
+                <a href="/AravAroraResume.pdf" target="_blank" className="text-blue-500 hover:underline"> here</a>.
+            </p>
+            <hr className="mb-4"></hr>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row lg:flex-wrap justify-between mb-4 space-x-2 gap-y-2 sm:gap-y-2 text-center">
                 <a href="#education" className="text-gray-800 hover:text-blue-500">Education</a>
@@ -17,8 +17,7 @@ const ResumeInfo = () => {
                 <a href="#other" className="text-gray-800 hover:text-blue-500">Volunteering/Other</a>
             </div>
 
-<br></br>
-        
+            <br></br>
 
             <div id="education" className="mb-8">
                 <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Education</h2>
@@ -43,7 +42,7 @@ const ResumeInfo = () => {
             </div>
 
             <div id="experience" className="mb-8">
-                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">CS-Related Work Experience</h2>
+                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Professional Experience</h2>
                 <div className="mb-6">
                     <div className="flex flex-wrap justify-between">
                         <h3 className="text-lg font-semibold text-gray-600">KTBYTE Computer Academy - <span className="text-sm text-gray-500 italic">Tutor + Teacher Assistant</span></h3>
@@ -65,6 +64,17 @@ const ResumeInfo = () => {
                         <li>Planned and implemented engaging and educational STEM activities for over 200+ campers in grades K-6</li>
                         <li>Facilitated group/individual STEM projects and provided technical support for other camp activities</li>
                         <li>Maintained and oversaw 60+ devices, ensuring they were functional for camp activities</li>
+                    </ul>
+                </div>
+                <div>
+                    <div className="flex flex-wrap justify-between">
+                        <h3 className="text-lg font-semibold text-gray-600">TEACHABLE AI Lab - <span className="text-sm text-gray-500 italic">Research Assistant</span></h3>
+                    </div>
+                    <p className="text-sm text-gray-600 italic">August 2024 - Present</p>
+                    <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
+                        <li>Partnered with PhD student Jenn Redding to develop a web application aimed at enhancing nurse training through the Apprentice Tutors platform.</li>
+                        <li>Designed and implemented the frontend using HTML and Bootstrap, with Flask serving as the backend framework.</li>
+                        <li>Contributed to the development of an interactive hint system utilizing a cache of past values, enhancing user adaptability.</li>
                     </ul>
                 </div>
             </div>

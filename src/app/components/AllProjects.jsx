@@ -7,7 +7,6 @@ export default function AllProjects() {
         image: 'trp.png',
         title: 'TheRolePlayer.Co',
         description: `Built a sports blog aimed at bridging the realms of finance and sports analytics. The website aims to provide avid fans with an unique manner of analysing their favorite sport!
-        - Newspaper currently has had over 120 different viewers
         - Implemented a Go backend to manage communication between the frontend and the MongoDB article database.`,
         date: 'May 2024 - Present',
         demoLink: 'https://theroleplayer.vercel.app/',
