@@ -6,7 +6,7 @@ const ResumeInfo = () => {
             <h3 className="text-2xl font-bold text-center mb-4 text-black">RESUME</h3>
             <p className="text-gray-800 mb-1">
                 This page offers an alternative format of my resume. Most of the information is similar to my PDF version. If you'd prefer to view the PDF, you can click 
-                <a href="/AravAroraResume.pdf" target="_blank" className="text-blue-500 hover:underline"> here</a>.
+                <a href="https://drive.google.com/file/d/1J19Fm2b3M0FaI24Y1Nx2hE1wMIsI9S-N/view?usp=sharing" target="_blank" className="text-blue-500 hover:underline"> here</a>.
             </p>
             <hr className="mb-4"></hr>
 
