@@ -26,7 +26,7 @@ const Home = () => {
         <h4 className="text-lg font-semibold text-black mb-2">Quick Links</h4>
         <ul className="grid grid-cols-2 gap-2">
           <li>
-            <Link target="_blank" href="/AravAroraResume.pdf">
+            <Link target="_blank" href="https://drive.google.com/file/d/1J19Fm2b3M0FaI24Y1Nx2hE1wMIsI9S-N/view?usp=sharing">
               <span className="link-span">
                 📄 Resume <span className="italic">(PDF)</span>
               </span>
