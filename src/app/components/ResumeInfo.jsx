@@ -8,17 +8,20 @@ const ResumeInfo = () => {
             </p>
             <hr className="mb-4"></hr>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-row lg:flex-wrap justify-between mb-4 space-x-2 gap-y-2 sm:gap-y-2 text-center">
+            {/* Navigation Links */}
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:flex lg:flex-row lg:flex-wrap justify-between mb-4 space-x-2 gap-y-2 sm:gap-y-2 text-center">
                 <a href="#education" className="text-gray-800 hover:text-blue-500">Education</a>
                 <a href="#experience" className="text-gray-800 hover:text-blue-500">Experience</a>
+                <a href="#research" className="text-gray-800 hover:text-blue-500">Research</a>
+                <a href="#projects" className="text-gray-800 hover:text-blue-500">Projects</a>
+                <a href="#skills" className="text-gray-800 hover:text-blue-500">Skills</a>
                 <a href="#certifications" className="text-gray-800 hover:text-blue-500">Certifications</a>
-                <a href="#courses" className="text-gray-800 hover:text-blue-500">Courses</a>
-                <a href="#transcript" className="text-gray-800 hover:text-blue-500">Transcript</a>
-                <a href="#other" className="text-gray-800 hover:text-blue-500">Volunteering/Other</a>
+                <a href="#other" className="text-gray-800 hover:text-blue-500">Extracurriculars</a>
             </div>
 
             <br></br>
 
+            {/* EDUCATION */}
             <div id="education" className="mb-8">
                 <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Education</h2>
                 <div className="mb-6">
@@ -28,62 +31,129 @@ const ResumeInfo = () => {
                     </div>
                     <ul className="list-disc list-inside text-base text-gray-600 space-y-1">
                         <li>B.S. in Computer Science (Threads in Intelligence + Sys/Arch)</li>
-                        <li className="italic">GPA: 4.0, Faculty Honors</li>
-                        <li>Expected Graduation: Dec. 2026</li>
+                        [cite_start]<li className="italic">GPA: 4.0 [cite: 6]</li>
+                        [cite_start]<li>Expected Graduation: May 2027 [cite: 7]</li>
+                        [cite_start]<li><span className="font-semibold">Relevant Coursework:</span> Object Oriented Programming, Data Structures and Algorithms, Discrete Mathematics, Computer Organization and Programming, Objects and Design, Computer System and Networks [cite: 8]</li>
                     </ul>
-                </div>
-                <div>
-                    <div className="flex flex-wrap justify-between">
-                        <h3 className="text-lg font-bold text-gray-800">Littleton High School</h3>
-                        <p className="text-sm text-gray-700 italic">Littleton, MA</p>
-                    </div>
-                    <p className="text-sm text-gray-600 italic">Aug. 2019 - May. 2023</p>
                 </div>
             </div>
 
+            {/* EXPERIENCE */}
             <div id="experience" className="mb-8">
-                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Professional Experience</h2>
+                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Experience</h2>
+
+                {/* Amazon */}
                 <div className="mb-6">
                     <div className="flex flex-wrap justify-between">
-                        <h3 className="text-lg font-semibold text-gray-600">KTBYTE Computer Academy - <span className="text-sm text-gray-500 italic">Tutor + Teacher Assistant</span></h3>
+                        <h3 className="text-lg font-semibold text-gray-600">Amazon - <span className="text-sm text-gray-500 italic">Software Development Engineering Intern</span></h3>
+                        <p className="text-sm text-gray-700 italic">Seattle, WA</p>
                     </div>
-                    <p className="text-sm text-gray-600 italic">Dec 2021 - Present</p>
+                    [cite_start]<p className="text-sm text-gray-600 italic">Sep 2025 – Nov 2025 [cite: 13]</p>
                     <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
-                        <li>Taught a year-long course focusing on the fundamentals of Object-Oriented Programming and APCS exam preparation</li>
-                        <li>Created and graded problem sets using practice questions from prior AP exams and KTBYTE question bank</li>
-                        <li>Introduced students to game development using Lua(Spring 2023), helping them build programs for Roblox</li>
-                        <li>Summer 2024 - TA for Upper/Advanced Java classes revolving around fundamental DSA concepts</li>
+                        [cite_start]<li>Leveraged AWS CDK and canary tests to automate stress testing of team's pipelines, enhancing monitoring coverage before critical Peak season. [cite: 14]</li>
+                        [cite_start]<li>Created an automated onboarding workflow using internal Amazon QuickSuite tooling to provision DynamoDB tables, saving 10+ hours of manual developer effort. [cite: 15]</li>
+                        [cite_start]<li>Built a proof-of-concept for a delayed shift planning tool, helping warehouse managers visualize late inbound volume. [cite: 16]</li>
                     </ul>
                 </div>
-                <div>
+
+                {/* HubSpot */}
+                <div className="mb-6">
                     <div className="flex flex-wrap justify-between">
-                        <h3 className="text-lg font-semibold text-gray-600">Camp Tahattawan - <span className="text-sm text-gray-500 italic">Technology Lead</span></h3>
+                        <h3 className="text-lg font-semibold text-gray-600">HubSpot - <span className="text-sm text-gray-500 italic">Software Engineering Intern</span></h3>
+                        <p className="text-sm text-gray-700 italic">Boston, MA</p>
                     </div>
-                    <p className="text-sm text-gray-600 italic">Summers 2021 - 2023</p>
+                    [cite_start]<p className="text-sm text-gray-600 italic">May 2025 – Aug 2025 [cite: 19]</p>
                     <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
-                        <li>Planned and implemented engaging and educational STEM activities for over 200+ campers in grades K-6</li>
-                        <li>Facilitated group/individual STEM projects and provided technical support for other camp activities</li>
-                        <li>Maintained and oversaw 60+ devices, ensuring they were functional for camp activities</li>
+                        [cite_start]<li>Worked on Ads Activation Paths, surfacing context-aware tips to Marketing Hub customers, boosting ad campaign activation by 40% in internal testing. [cite: 20]</li>
+                        [cite_start]<li>Developed a Spring Boot microservice with Spring Data JPA and Redis caching for banners, achieving an 85% cache hit rate. [cite: 21]</li>
+                        [cite_start]<li>Collaborated to integrate Google Performance Max (PMax) campaign creation, wiring new React/TypeScript flows to backend APIs. [cite: 21]</li>
                     </ul>
                 </div>
-                <div>
+
+                {/* Personify AI */}
+                <div className="mb-6">
                     <div className="flex flex-wrap justify-between">
-                        <h3 className="text-lg font-semibold text-gray-600">TEACHABLE AI Lab - <span className="text-sm text-gray-500 italic">Research Assistant</span></h3>
+                        <h3 className="text-lg font-semibold text-gray-600">Personify AI - <span className="text-sm text-gray-500 italic">Software Engineering Intern</span></h3>
+                        <p className="text-sm text-gray-700 italic">Atlanta, GA</p>
                     </div>
-                    <p className="text-sm text-gray-600 italic">August 2024 - Present</p>
+                    [cite_start]<p className="text-sm text-gray-600 italic">Jun 2024 – Aug 2024 [cite: 24]</p>
                     <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
-                        <li>Partnered with PhD student Jenn Redding to develop a web application aimed at enhancing nurse training through the Apprentice Tutors platform.</li>
-                        <li>Designed and implemented the frontend using HTML and Bootstrap, with Flask serving as the backend framework.</li>
-                        <li>Contributed to the development of an interactive hint system utilizing a cache of past values, enhancing user adaptability.</li>
+                        [cite_start]<li>Developed and deployed RESTful APIs in Node.js to handle dynamic user data, improving database query efficiency by 30%. [cite: 25]</li>
+                        [cite_start]<li>Created a fully responsive user dashboard (Next.js, Tailwind CSS + Pinecone), contributing to a 40% increase in mobile traffic. [cite: 26]</li>
+                    </ul>
+                </div>
+
+                {/* Littleton Youth Soccer - Moved to Experience per resume */}
+                <div className="mb-6">
+                    <div className="flex flex-wrap justify-between">
+                        <h3 className="text-lg font-semibold text-gray-600">Littleton Youth Soccer Club - <span className="text-sm text-gray-500 italic">Software Engineer</span></h3>
+                        <p className="text-sm text-gray-700 italic">Littleton, MA</p>
+                    </div>
+                    [cite_start]<p className="text-sm text-gray-600 italic">May 2023 – May 2025 [cite: 29]</p>
+                    <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
+                        [cite_start]<li>Co-designed and developed a full-stack web application for LYSC soccer evaluators to administer tryouts, automating team generation for over 400 players. [cite: 30]</li>
+                        [cite_start]<li>Reported a 92% satisfaction rate from coaches, up from 78% under the prior paper-based system. [cite: 31]</li>
                     </ul>
                 </div>
             </div>
 
+            {/* RESEARCH */}
+            <div id="research" className="mb-8">
+                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Research</h2>
+                <div className="mb-6">
+                    <div className="flex flex-wrap justify-between">
+                        <h3 className="text-lg font-semibold text-gray-600">TEACHABLE AI Lab - <span className="text-sm text-gray-500 italic">Research Intern (ALOE-AI)</span></h3>
+                        <p className="text-sm text-gray-700 italic">Atlanta, GA</p>
+                    </div>
+                    [cite_start]<p className="text-sm text-gray-600 italic">Aug 2024 – Present [cite: 35]</p>
+                    <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
+                        [cite_start]<li>Collaborating with PhD student Jenn Redding on the Apprentice Tutors platform for the Technical College System of Georgia (TCSG). [cite: 36]</li>
+                        <li>Co-author, "Generating In-Context, Personalized Feedback for Intelligent Tutors with LLMs." [cite_start]Accepted to IJAIED, 2025. [cite: 37]</li>
+                    </ul>
+                </div>
+            </div>
+
+            {/* PROJECTS */}
+            <div id="projects" className="mb-8">
+                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Projects</h2>
+                
+                {/* FanPlay */}
+                <div className="mb-6">
+                    <div className="flex flex-wrap justify-between">
+                        <h3 className="text-lg font-semibold text-gray-600">FanPlay - <span className="text-sm text-gray-500 italic">Frontend Developer</span></h3>
+                    </div>
+                    [cite_start]<p className="text-sm text-gray-600 italic">Aug 2024 – Present [cite: 40]</p>
+                    <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
+                        [cite_start]<li>Developed the frontend of FanPlay, a React Native app projected to be used by 5,000 fans at Georgia Tech football games. [cite: 41]</li>
+                        [cite_start]<li>Co-led the implementation of the MVP voting feature, enabling fans to cast votes and view real-time results. [cite: 42]</li>
+                    </ul>
+                </div>
+
+                {/* RolePlayer.co */}
+                <div className="mb-6">
+                    <div className="flex flex-wrap justify-between">
+                        <h3 className="text-lg font-semibold text-gray-600">The RolePlayer.co - <span className="text-sm text-gray-500 italic">Co-Founder (MERN Stack)</span></h3>
+                    </div>
+                    [cite_start]<p className="text-sm text-gray-600 italic">May 2024 – Aug 2025 [cite: 43]</p>
+                    <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
+                        [cite_start]<li>Built a sports blog aimed at bridging the realms of finance and sports analytics. [cite: 44]</li>
+                        [cite_start]<li>Developed RESTful API endpoints using Node.js/Express to facilitate communication between the frontend and the MongoDB article database. [cite: 45]</li>
+                    </ul>
+                </div>
+            </div>
+
+            {/* TECHNICAL SKILLS - Added from Resume */}
+            <div id="skills" className="mb-8">
+                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Technical Knowledge</h2>
+                <ul className="list-disc list-inside text-base text-gray-700 space-y-1">
+                    [cite_start]<li><span className="font-semibold">Languages/Frameworks:</span> Java, Python, SQL, C++, C, JavaScript, TypeScript, NoSQL, Node.js, Angular, React, Next.js, Vite, Redux, Express, JUnit, Go, Swift, Spring [cite: 47]</li>
+                    [cite_start]<li><span className="font-semibold">Developer Tools:</span> Git, AWS, Postman, Google Cloud Platform, Google Apps Script, VS Code, Eclipse, IntelliJ [cite: 48]</li>
+                </ul>
+            </div>
+
+            {/* CERTIFICATIONS - Kept from old site */}
             <div id="certifications" className="mb-8">
                 <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Certifications</h2>
-                <p className="text-base text-gray-700 mb-4">
-                    Over the 2024 summer, I focused on enhancing my Full Stack Web Development skills and obtained the following certifications:
-                </p>
                 <ul className="list-disc list-inside text-base text-gray-700 space-y-1">
                     <li><a target="_blank" href="https://www.freecodecamp.org/certification/fcc1ec8fbae-322c-4baf-8dcd-bc4af792daa6/responsive-web-design" className="text-blue-500 hover:underline">Responsive Web Design Certification</a></li>
                     <li><a target="_blank" href="https://www.freecodecamp.org/certification/fcc1ec8fbae-322c-4baf-8dcd-bc4af792daa6/javascript-algorithms-and-data-structures-v8" className="text-blue-500 hover:underline">JavaScript Algorithms and Data Structures Certification</a></li>
@@ -92,46 +162,26 @@ const ResumeInfo = () => {
                 </ul>
             </div>
 
-            <div id="courses" className="mb-8">
-                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Relevant Coursework</h2>
-                <ul className="list-disc list-inside text-base text-gray-700 space-y-1">
-                    <li>CS 1331 - Object Oriented Programming</li>
-                    <li>CS 1332 - Data Structures and Algorithms</li>
-                    <li>CS 2050 - Discrete Mathematics</li>
-                    <li>CS 2110 - Computer Organization and Programming</li>
-                    <li>CS 2340 - Objects and Design</li>
-                </ul>
-            </div>
-
-            <div id="transcript" className="mb-8">
-                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Transcript</h2>
-                <p className="text-base text-gray-700 mb-4">Here's a link to an outdated transcript. I'll get a new online version when I'm back on campus. Sorry for the inconvenience:</p>
-                <h2 className="text-center"><a href="/resume.pdf" target="_blank" className="border-2 border-black px-4 rounded-lg  py-2 mx-auto text-blue-500 hover:underline">Open Transcript</a></h2>
-            </div>
-
+            {/* EXTRACURRICULARS */}
             <div id="other" className="mb-8">
-                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Volunteering/Other Jobs</h2>
+                <h2 className="text-xl font-bold text-gray-800 border-b pb-2 mb-6 text-center block">Extracurriculars</h2>
                 <div className="mb-6">
-                    <div className="flex flex-wrap justify-between">
-                        <h3 className="text-lg font-semibold text-gray-600">Littleton Youth Soccer Club - <span className="text-sm text-gray-500 italic">Volunteer (Full Stack Web Development)</span></h3>
-                    </div>
-                    <p className="text-sm text-gray-600 italic">May 2024 - Present</p>
-                    <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
-                        <li>Streamlined soccer tryouts by designing a full-stack web application, enabling evaluators to perform assessments using mobile devices.</li>
-                        <li>Utilized historical team data to develop a player evaluation algorithm, simplifying the team creation process.</li>
-                        <li>Integrated the evaluation algorithm with Google Apps Script, saving LYSC Directors over 40 hours previously spent on manual team formation and data entry.</li>
-                        <li>Trained LYSC Evaluators on utilizing the newly-built software, ensuring minimal mishaps/errors during the Spring Evaluation Cycle.</li>
-                    </ul>
-                </div>
-                <div>
                     <div className="flex flex-wrap justify-between">
                         <h3 className="text-lg font-semibold text-gray-600">Georgia Tech Football Team - <span className="text-sm text-gray-500 italic">Student Videographer</span></h3>
                     </div>
                     <p className="text-sm text-gray-600 italic">August 2023 - Present</p>
                     <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
-                        <li>Videographed daily football practices from various angles (Endzone, Sideline, Ground level) for coaches' breakdown and social media purposes.</li>
-                        <li>Aided in the set-up/breakdown of cameras across Bobby Dodd Stadium/Brock Practice Facility for filming.</li>
-                        <li>Assisted with editing coaches' film from drills at practice.</li>
+                        [cite_start]<li>Videographed daily football practices from various angles for coaches' breakdown and social media purposes. [cite: 49]</li>
+                        <li>Aided in the set-up/breakdown of cameras across Bobby Dodd Stadium/Brock Practice Facility.</li>
+                    </ul>
+                </div>
+                <div>
+                     <div className="flex flex-wrap justify-between">
+                        <h3 className="text-lg font-semibold text-gray-600">Other Activities</h3>
+                    </div>
+                    <ul className="list-disc list-inside text-base text-gray-700 mt-2 space-y-1">
+                         [cite_start]<li>GT Data Science Club [cite: 49]</li>
+                         [cite_start]<li>GOALS Soccer (Best Buddies Program) [cite: 49]</li>
                     </ul>
                 </div>
             </div>
