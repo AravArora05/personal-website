@@ -18,10 +18,10 @@ const skillsData = [
             {
                 "name": "C++",
                 "score": 4,
-                "description": "I started diving deeper into C++ following my internship at Amazon! It's been a really cool learning opportunity to understand manual memory management and low-level system architecture. I'm currently using it to build high-performance applications where speed and resource control are critical, distinct from the managed environments of Java or JS.",
+                "description": "I started diving deeper into C++ following my internship at Amazon! It's been a really cool learning opportunity to understand manual memory management and low-level system architecture.",
                 "projects": [
-                    { "name": "System Resource Monitor", "link": "https://github.com/AravArora05/cpp-system-monitor" },
-                    { "name": "Data Structures Implementation", "link": "https://github.com/AravArora05/cpp-dsa-practice" }
+                    { "name": "Task Manager", "link": "https://github.com/AravArora05/task-manager-cpp" },
+                    { "name": "CPP Learning Journey", "link": "https://github.com/AravArora05/cpp-learning-journey" }
                 ]
             },
             {
