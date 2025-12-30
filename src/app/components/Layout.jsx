@@ -99,7 +99,7 @@ const Layout = ({ children }) => {
           <section>
             <h3 className="text-xl font-bold mb-4 text-black">ABOUT</h3>
             <p className="text-gray-700 mb-6">
-              Hello! I'm Arav, a second-year Computer Science student at Georgia Tech, set to graduate in December 2026. I really enjoy working with the MERN stack for full-stack web development. Currently, I'm expanding my knowledge in ML and AI. I'm eager to tackle new challenges and apply my skills to innovative projects in the ever-changing tech industry.
+              Hello! I'm Arav, a third-year Computer Science student at Georgia Tech, set to graduate in May 2027. I really enjoy working with the MERN stack for full-stack web development. Currently, I'm expanding my knowledge in Java and C++. I'm eager to tackle new challenges and apply my skills to innovative projects in the ever-changing tech industry.
             </p>
             <Link href="/about">
               <button className="border-2 border-black text-black px-6 py-2 font-semibold hover:bg-blue-100 transition duration-300">
